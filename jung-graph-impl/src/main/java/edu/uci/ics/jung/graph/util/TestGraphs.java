@@ -26,14 +26,14 @@ public class TestGraphs {
    * edges, 10 nodes, and is formed of two connected components, one of 8 nodes, the other of 2.
    */
   public static String[][] pairs = {
-    {"a", "b", "3"},
-    {"a", "c", "4"},
-    {"a", "d", "5"},
-    {"d", "c", "6"},
-    {"d", "e", "7"},
-    {"e", "f", "8"},
-    {"f", "g", "9"},
-    {"h", "i", "1"}
+      {"a", "b", "3"},
+      {"a", "c", "4"},
+      {"a", "d", "5"},
+      {"d", "c", "6"},
+      {"d", "e", "7"},
+      {"e", "f", "8"},
+      {"f", "g", "9"},
+      {"h", "i", "1"}
   };
 
   /**
@@ -113,7 +113,8 @@ public class TestGraphs {
         // for each previous node...
         for (String v2 : previousLayers) {
           if (Math.random() < linkprob) {
-            Double de = new Double(Math.random());
+            // Double de = new Double(Math.random());
+            Double de = Math.random();
             dag.addEdge(v, v2, de);
           }
         }
